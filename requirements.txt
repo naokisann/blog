@@ -5,7 +5,6 @@ django-heroku==0.3.1
 django-markdownx==2.0.28
 django-tinymce==2.8.0
 django-toolbelt==0.0.1
-django-torina-blog==1.0.0
 gunicorn==19.9.0
 Markdown==3.1
 Pillow==5.4.1
