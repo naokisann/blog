@@ -21,6 +21,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'markdownx',  # markdown記法でかけるドン(^ ^)
     'blog.apps.BlogConfig',# Added
     'django.contrib.admin',
     'django.contrib.auth',
@@ -58,6 +59,8 @@ TEMPLATES = [
         },
     },
 ]
+
+
 
 WSGI_APPLICATION = 'project3.wsgi.application'
 
@@ -106,7 +109,21 @@ USE_L10N = True
 USE_TZ = True
 
 
+
+MARKDOWNX_MARKDOWN_EXTENSIONS = [
+    'markdown.extensions.extra',
+]
+
+# 2000, 2000 ぐらいの画像まではリサイズさせない。
+MARKDOWNX_IMAGE_MAX_SIZE = {'size': (2000, 2000), 'quality': 100}
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+MEDIA_URL = '/media/'
+
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+)

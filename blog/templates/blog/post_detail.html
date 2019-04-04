@@ -5,7 +5,12 @@
     <h2 class="card-header bg-dark text-white">{{ post.title }}</h2>
 <div class="card-body">
   <p>{{ post.created_at }},{{ post.category }}</p>
- {{ post.text |linebreaksbr| urlize }}
+  {% comment %}
+ {{ post.text |safe|linebreaksbr| urlize }}
+ {% endcomment %}
+ {% if post.test_text %}
+ {{ post.text_to_markdown | safe }}
+ {% endif %}
 </div>
 </div>
 
