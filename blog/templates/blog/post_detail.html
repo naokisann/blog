@@ -8,7 +8,7 @@
   {% comment %}
  {{ post.text |safe|linebreaksbr| urlize }}
  {% endcomment %}
- {% if post.test_text %}
+ {% if post.text %}
  {{ post.text_to_markdown | safe }}
  {% endif %}
 </div>
