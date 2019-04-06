@@ -10,7 +10,8 @@ body{
   max-width: 200px;
 }
 
-.card-body image{
+.card-body img{
+  display: inline;
   width: 100%;
 }
 
