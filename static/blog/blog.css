@@ -10,3 +10,16 @@ body{
   background-size:cover;
 
 }
+
+
+.pc { display: block !important; }
+.sp { display: none !important; }
+
+@media only screen and (max-width: 750px) {
+.pc { display: none !important; }
+.sp { display: block !important; }
+}
+
+@media only screen and (max-width: 750px) {
+img { max-width: 100%; }
+}
