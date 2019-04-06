@@ -8,5 +8,5 @@ body{
 .jumbotron{
   background-image: url("/static/image/blog-image.jpg");
   background-size:cover;
-  height: 700px;
+
 }
