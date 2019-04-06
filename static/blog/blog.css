@@ -10,6 +10,9 @@ body{
   max-width: 200px;
 }
 
+.card-body image{
+  width: 100%;
+}
 
 
 
