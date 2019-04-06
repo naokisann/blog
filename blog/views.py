@@ -5,7 +5,7 @@ from django.db.models import Q #　記事の内容を検索するためのパッ
 
 class IndexView(generic.ListView):
     model = Post
-    paginate_by = 10
+    paginate_by = 2
 
     def get_queryset(self):
         queryset = Post.objects.order_by('-created_at')#

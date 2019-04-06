@@ -1,4 +1,6 @@
 {% extends 'blog/base.html' %}
+{% load static %}
+
 
 {% block content %}
 <div class="card　mb-3">
@@ -12,6 +14,7 @@
  {{ post.text_to_markdown | safe }}
  {% endif %}
 </div>
+<a  class="btn btn-dark mb-5" href="{% url 'blog:index' %}">Back to Home</a>
 </div>
 
 {% endblock %}

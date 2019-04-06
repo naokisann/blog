@@ -1,7 +1,7 @@
 {% extends 'blog/base.html' %}
+{% load static %}
 {% block content %}
-<h1>記事一覧</h1>
-
+   <h1><span style="font-weight:100;">All Posts</span></h1>
 {% for post in post_list %}
 
 
@@ -14,7 +14,7 @@
     <h3 class="mb-0">{{ post.title }}</h3>
     <div class="mb-1 text-muted">{{ post.created_at }}</div>
     <p class="card-text mb-auto">{{post.subtitle}}</p>
-    <a href="{% url 'blog:detail' post.pk %}" class="btn btn-secondary"  >続きを読む</a>
+    <a href="{% url 'blog:detail' post.pk %}" class="btn btn-secondary" >Read More</a>
   </div>
 </div>
 

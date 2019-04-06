@@ -1,0 +1,12 @@
+/*  sidebar  */
+body{
+  font-weight:100;
+}
+
+
+/*  記事  */
+.jumbotron{
+  background-image: url("/static/image/blog-image.jpg");
+  background-size:cover;
+  height: 700px;
+}
