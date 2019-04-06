@@ -5,8 +5,14 @@ body{
 
 
 /*  記事  */
-.jumbotron{
+.pc{
   background-image: url("/static/image/blog-image.jpg");
+  background-size:cover;
+
+}
+
+.sp{
+  background-image: url("/static/image/blog-image-sp.jpg");
   background-size:cover;
 
 }
@@ -21,5 +27,5 @@ body{
 }
 
 @media only screen and (max-width: 750px) {
-.jumbotron { max-width: 100%; }
+.sp { max-width: 100%; }
 }
