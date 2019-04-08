@@ -2,6 +2,9 @@
 body{
   font-weight:100;
 }
+.footer{
+  text-align: center;
+}
 .post{
   height: 200px;
 }
@@ -14,6 +17,17 @@ body{
   display: inline;
   width: 100%;
 }
+
+
+.left img{
+  display: inline;
+  width: auto;
+}
+.post .right{
+  display: inline;
+}
+
+
 
 
 

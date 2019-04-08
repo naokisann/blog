@@ -17,4 +17,17 @@
 <a  class="btn btn-dark mb-5" href="{% url 'blog:index' %}">Back to Home</a>
 </div>
 
+{% with prev=post.get_previous_by_pk %}
+  {% if prev %}
+    <a href="{% url 'blog:detail' prev.pk %}">前の記事</a>
+  {% endif %}
+{% endwith %}
+
+
+{% with next=post.get_next_by_pk %}
+  {% if next %}
+    <a href="{% url 'blog:detail' next.pk %}">次の記事</a>
+  {% endif %}
+{% endwith %}
+
 {% endblock %}
