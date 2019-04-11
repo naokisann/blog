@@ -6,9 +6,11 @@
 
 
 <div class="post row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+  {% comment %}
   <div class="col-auto d-none d-lg-block">
     <img class="thumbnail mt-2 ml-2 pr-2 pb-2 img-fluid" src='{{ post.thumbnail.url }}' >
   </div>
+  {% endcomment %}
   <div class="col p-2 d-flex flex-column position-static">
     <strong class="d-inline-block mb-2 text-dark">{{ post.category }}</strong>
     <h3 class="mb-0">{{ post.title }}</h3>
